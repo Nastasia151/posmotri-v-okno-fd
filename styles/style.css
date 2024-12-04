@@ -11,6 +11,7 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
+  margin: auto;
   display: grid;
   place-items: center;
   color: #fff;
@@ -48,7 +49,6 @@ ol {
 
 .content__details {
   display: flex;
-  
   flex-direction: column;
   gap: 26px;
   justify-content: end;
@@ -105,7 +105,6 @@ ol {
 }
 
 .content__list-item {
-  width: 394px;
   margin-bottom: 30px;
 }
 
@@ -273,4 +272,3 @@ input[type='checkbox']:checked + span {
   outline: 1px solid #fff;
   outline-offset: 1px;        
 }
-
