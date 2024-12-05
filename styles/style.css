@@ -101,11 +101,12 @@ ol {
   height: 298px;
   overflow: auto;
   scrollbar-width: none;
-  padding-bottom: 1px;
+  padding: 2px;
 }
 
 .content__video-card {
   display: flex;
+  align-items: center;
 } 
 
 .content__video-card-thumbnail {
@@ -143,8 +144,8 @@ ol {
 
 .content__video-card-title {
   font-family: 'Oswald', serif;
-  width: 177px;
-  padding-bottom: 3px;
+  width: 195px;
+  padding-bottom: 6px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -152,13 +153,17 @@ ol {
   line-height: 100%;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 6px;
 }
 
 .content__video-card-description {
   color: #fff;
   line-height: 90%;
-  width: 200px;
+  width: 195px;
+}
+
+.content__video-card-description-container {
+  height: 107px;
+  padding: 5px 0 0 5px;
 }
 
 .visually-hidden {
@@ -254,7 +259,7 @@ input[type='checkbox']:checked + span {
   outline-offset: 1px;
 }
 
-.search-form__label:hover:has(.search-form__checkbox), .button:hover {
+.search-form__label:hover:has(.search-form__checkbox), .button:hover, .content__card-link:hover {
   text-decoration: underline solid #fff;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
@@ -281,8 +286,16 @@ input[type='checkbox']:checked + span {
   outline-offset: 1px;
 }
 
-.button:active {
+.button:active, .content__card-link:active  {
   background-color: rgb(84, 80, 80);
+  text-decoration: none;
+}
+
+.content__card-link_current {
+  background-color: rgb(84, 80, 80);
+}
+
+.content__card-link_current:hover {
   text-decoration: none;
 }
 
@@ -294,23 +307,3 @@ input[type='checkbox']:checked + span {
   outline: 1px solid #fff;
   outline-offset: 1px;        
 }
-
-.content__card-link:hover {
-  text-decoration: underline solid #fff;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-}
-
-.content__card-link_current {
-  background-color: rgb(84, 80, 80);
-}
-
-.content__card-link_current:hover {
-  text-decoration: none;
-}
-
-.content__card-link:active {
-  text-decoration: none;
-  background-color: rgb(84, 80, 80);
-}
-
