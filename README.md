@@ -1,1 +1,1 @@
-https://github.com/Nastasia151/posmotri_v_okno.git
+https://github.com/Nastasia151/posmotri-v-okno-fd.git
