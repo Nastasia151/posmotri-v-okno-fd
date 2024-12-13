@@ -140,8 +140,8 @@ ol {
   appearance: none;
   font-weight: 400; 
   font-size: 18px;
-  border-left: none;
-  border-right: none;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   padding: 2px 0;
@@ -261,6 +261,37 @@ ol {
   white-space: nowrap;
 }
 
+.search-form__label:has(.search-form__textfield:active) {
+  outline: none;
+}
+
+.search-form__textfield:active {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox:active {
+  width: 19px;
+  height: 19px;
+  background-color: #fff;
+  border: 2px solid #000;
+  outline: 1px solid #fff;
+} 
+
+.search-form__label:active:has(.search-form__checkbox) {
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: rgb(84, 80, 80);
+  text-decoration: none;
+}
+
+.content__card-link:active {
+  background-color: rgb(84, 80, 80);
+  text-decoration: none;
+}
+
 .search-form__textfield:focus {
   outline: none;
 } 
@@ -306,31 +337,4 @@ ol {
 
 .content__card-link_current:hover {
   text-decoration: none;
-}
-
-.search-form__pseudo-checkbox:active {
-  width: 19px;
-  height: 19px;
-  background-color: #fff;
-  border: 2px solid #000;
-  outline: 1px solid #fff;
-} 
-
-
-.search-form__label:active:has(.search-form__checkbox) {
-  text-decoration: none;
-}
-
-.button:active {
-  background-color: rgb(84, 80, 80);
-  text-decoration: none;
-}
-
-.content__card-link:active  {
-  background-color: rgb(84, 80, 80);
-  text-decoration: none;
-}
-
-.search-form__textfield:active {
-  border: 1px solid #000;
 }
