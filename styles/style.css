@@ -334,7 +334,3 @@ ol {
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
-
-.content__card-link_current:hover {
-  text-decoration: none;
-}
